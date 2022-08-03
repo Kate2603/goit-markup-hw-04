@@ -185,6 +185,13 @@ body {
     background-position: border-box;
 }
 
+.background:hover,
+.bacground:focus {
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -264,6 +271,12 @@ body {
     background: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
+}
+
+.about-list-container:hover,
+.about-list-container:focus {
+    border: 1px solid #2196F3;
+    border-radius: 4px;
 }
 
 .about-title-item {
@@ -477,7 +490,7 @@ body {
 }
 
 .footer-social-container {
-    margin-left: 70px;
+    align-items: flex-start;
 
 }
 
