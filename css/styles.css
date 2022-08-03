@@ -255,7 +255,7 @@ body {
 
 }
 
-.about-list-icon {
+.about-list-container { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,6 +267,7 @@ body {
 }
 
 .about-title-item {
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -389,7 +390,6 @@ body {
 
 .social-list-icon {
     fill: #AFB1B8;
-
 }
 /* ================= /TEAM  ================= */
 /* ================= CLIENTS  ================= */
@@ -443,10 +443,6 @@ body {
     
 }
 
-.footer-list {
-    margin-left: 70px;
-}
-
 .logo-footer-link {
     margin-bottom: 20px;
 }
@@ -481,6 +477,7 @@ body {
 }
 
 .footer-social-container {
+    margin-left: 70px;
 
 }
 
