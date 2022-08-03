@@ -225,6 +225,7 @@ body {
 /*  ================= /HERO  ================= */
 
 /*  ================= ABOUT  ================= */
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -437,8 +438,13 @@ body {
     background: var(--secondary-background);
 }
 
-.footer-list {
+.footer-container {
+    display: flex;
+    
+}
 
+.footer-list {
+    margin-left: 70px;
 }
 
 .logo-footer-link {
@@ -474,14 +480,13 @@ body {
     color: var(--ternary-text-color);
 }
 
+.footer-social-container {
+
+}
+
 .footer-social-list {
     display: flex;
     gap: 10px;
-}
-
-.footer-social-list-item{
-    
-
 }
 
 .footer-social-list-link {
