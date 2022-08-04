@@ -63,13 +63,12 @@ button {
 body {
     font-family: var(--primary-font), sans-serif;
     color: var(--primary-text-color);
-}
-
-.body:hover {
     text-decoration: underline;
     text-decoration-line: 1px;
     text-decoration-color: #2196F3;
 }
+
+
 /* ============ INDEX.HTML==============*/
 
 /* BODY */
