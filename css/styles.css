@@ -199,12 +199,6 @@ text-decoration-color: #2196F3;*/
     background-position: border-box;
 }
 
-.background:hover,
-.bacground:focus {
-    border: 1px solid #2196F3;
-}
-
-
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -245,6 +239,7 @@ text-decoration-color: #2196F3;*/
 .modal-btn:hover,
 .modal-btn:focus {
     border: 1px solid #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 /*  ================= /HERO  ================= */
@@ -277,7 +272,6 @@ text-decoration-color: #2196F3;*/
 .about-list-icon:hover {
     background: #F5F4FA;
     border-radius: 4px;
-
 }
 
 .about-list-container { 
@@ -589,7 +583,6 @@ text-decoration-color: #2196F3;*/
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     border-style: none;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -601,6 +594,7 @@ text-decoration-color: #2196F3;*/
 
 .menu-btn:hover {
     border: 1px solid #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
