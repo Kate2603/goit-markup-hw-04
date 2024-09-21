@@ -429,19 +429,13 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.portfolio-link-wrapper {
+.portfolio-wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-link:hover .overlay,
-.portfolio-link:focus .overlay {
+.portfolio-wrapper:hover .overlay,
+.portfolio-wrapper:focus .overlay {
   transform: translateY(0%);
 }
 
