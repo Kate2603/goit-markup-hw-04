@@ -12,6 +12,7 @@
   --thirdth-background: #4d5ae5;
   --fourth-background: #404bbf;
   --sixth-background: #31d0aa;
+  --seventh-background: #f4f4fd;
   --transition-duration-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -192,7 +193,6 @@ body {
 .hero {
   padding: 188px 0;
   text-align: center;
-  border: 1px solid #8e8f99;
 }
 
 .background {
@@ -287,7 +287,7 @@ body {
   list-style: none;
   width: 264px;
   height: 112px;
-  background-color: #f5f4fa;
+  background-color: var(--seventh-background);
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
@@ -314,7 +314,7 @@ body {
 /* ================= TEAM  ================= */
 .team {
   padding: 120px 0;
-  background-color: var(--fifth-text-color);
+  background-color: var(--seventh-background);
 }
 
 .team-menu {
