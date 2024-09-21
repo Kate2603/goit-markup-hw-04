@@ -72,6 +72,8 @@ body {
 }
 /* ================= HEADER ================= */
 .header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -122,7 +124,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondth-text-color);
+  color: var(--sixth-text-color);
   display: block;
   list-style: none;
   text-decoration: none;
@@ -203,7 +205,7 @@ body {
     ),
     url('../images/bg.jpg');
   background-repeat: no-repeat;
-  background-position: border-box;
+  background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin-left: auto;
@@ -340,7 +342,8 @@ body {
   border-radius: 0 0 4px 4px;
   width: calc((100% - 3 * 24px) / 4);
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-img {
@@ -382,11 +385,10 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: var(--thirdth-text-color);
+  color: var(--fifth-text-color);
   background-color: var(--thirdth-background);
   border: none;
-  transition: background-color var(--transition-duration-and-func),
-    fill var(--transition-duration-and-func);
+  transition: background-color var(--transition-duration-and-func);
 }
 
 .social-list-link:hover,
@@ -416,26 +418,9 @@ body {
   row-gap: 48px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  transform: translate(0, 100%);
-  transition: transform var(--transition-duration-and-func);
-
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--fifth-text-color);
-  background-color: #9747ff;
-  width: 100%;
-  height: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+.portfolio-link-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-cards {
@@ -444,23 +429,35 @@ body {
 }
 
 .portfolio-cards:hover {
-  box-shadow: 0px 1px 1px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 1px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link:hover .overlay,
 .portfolio-link:focus .overlay {
-  transform: translate(0, 0);
+  transform: translateY(0%);
 }
 
 .portfolio-link {
   display: block;
 }
 
-.portfolio-link-wrapper {
-  position: relative;
-  overflow: hidden;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform var(--transition-duration-and-func);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--fifth-text-color);
+  background-color: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
 }
 
 .portfolio-subscription {
@@ -501,8 +498,7 @@ body {
 }
 
 .footer-list {
-  display: block;
-  margin-right: 156px;
+  margin-right: 120px;
 }
 
 .logo-footer {
