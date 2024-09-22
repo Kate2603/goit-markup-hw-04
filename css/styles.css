@@ -371,6 +371,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-bottom: 8px;
 }
 
 .social-list {
@@ -434,8 +435,8 @@ body {
   overflow: hidden;
 }
 
-.portfolio-wrapper:hover .overlay,
-.portfolio-wrapper:focus .overlay {
+.portfolio-cards:hover .overlay,
+.portfolio-cards:focus .overlay {
   transform: translateY(0%);
 }
 
